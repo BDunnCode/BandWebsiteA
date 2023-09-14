@@ -1,19 +1,101 @@
 /* ====================
-FONT IMPORTS GO HERE
+NOTE:
+The Booter - Zero Zero font problem still persist as of 9-12-23. I cannot seem to find
+any versions outside of ttf.
 ==================== */
 
 /* ====================
-CSS RESET GOES HERE
+FONT IMPORTS 
 ==================== */
 
-/* ====================
-TESTING STYLESHEET HOOK-UPS DELETE WHEN APPROPRIATE
-==================== */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap");
+
+/* @font-face {
+  font-family: "Booter - Zero Zero";
+  src: url("Fonts/Booter\ -\ Zero\ Zero.woff") format("woff"),
+    url("Font/Booter - Zero Zero.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+} */
 
 /* ====================
-TESTING MY OWN KNOWLEDGE / PREDICTIVE CAPACITY DELETE WHEN APPROPRIATE
+CSS RESET 
 ==================== */
+
+* {
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  color: #777;
+  margin: 0;
+  padding: 0;
+}
+
+/* ====================
+HEADER STYLINGS
+==================== */
+
+.main-header {
+  background-color: rgba(0, 0, 0, 0.6);
+  background-image: url("TempImages/Header Background.jpg");
+  background-blend-mode: multiply;
+  background-size: cover;
+  padding-bottom: 30px;
+}
 
 ul {
   list-style-type: none;
+}
+
+.nav li {
+  display: inline;
+}
+
+.nav a {
+  display: inline-block;
+  padding: 0.5em;
+  color: white;
+  text-decoration: none;
+}
+
+.main-nav {
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: lighter;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.main-nav li {
+  padding: 0 5%;
+}
+
+.nav a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.band-name {
+  text-align: center;
+  font-size: 4em;
+  font-family: "Booter - Zero Zero"; /* This gave issues last time
+  I haven't tried to put it in
+  yet, though. */
+  font-weight: normal; /* This disables some sort of standard tag behavior. Might not be needed */
+  color: white;
+}
+
+.band-name-large {
+  font-size: 8em;
+}
+
+/* ====================
+CONTENT
+==================== */
+
+.content-section {
+  margin: 1em;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5em;
 }
