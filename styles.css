@@ -1,15 +1,8 @@
 /* ====================
-NOTE:
-The Booter - Zero Zero font problem still persists as of 9-12-23. I cannot seem to find
-any versions outside of ttf.
-==================== */
-
-/* ====================
 FONT IMPORTS 
 ==================== */
 
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Metal+Mania&family=Raleway:wght@300;400;700&display=swap");
 
 @font-face {
   font-family: "Booter - Zero Zero";
@@ -72,11 +65,6 @@ ul {
 .nav a:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
-
-/* ====================
-This will require attention and fixes, but that's dependent on fixing the Booter Zero Zero 
-important problem, first.
-==================== */
 
 .band-name {
   text-align: center;
@@ -208,7 +196,7 @@ CONTENT
 STORE PAGE STYLES
 ==================== */
 
-.flex-container {
+.shop-items {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
