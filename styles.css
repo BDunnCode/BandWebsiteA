@@ -11,13 +11,13 @@ FONT IMPORTS
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap");
 
-/* @font-face {
+@font-face {
   font-family: "Booter - Zero Zero";
   src: url("Fonts/Booter\ -\ Zero\ Zero.woff") format("woff"),
     url("Font/Booter - Zero Zero.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
-} */
+}
 
 /* ====================
 CSS RESET 
@@ -91,6 +91,43 @@ important problem, first.
 }
 
 /* ====================
+BUTTON STYLINGS
+==================== */
+
+.btn {
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.67em 0.67em;
+  cursor: pointer;
+}
+
+.btn-header {
+  margin: 0.5em 15% 2em 15%;
+  color: white;
+  border: 2px solid #2d9cdb;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 0;
+  font-size: 1.5em;
+  padding-left: 2em;
+  padding-right: 2em;
+  font-weight: lighter;
+}
+
+.btn-header:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.play-btn {
+  display: block;
+  margin: 0 auto;
+  color: #2d9cdb;
+  font-size: 4em;
+  border-radius: 50%;
+  padding: 0;
+  width: 100px;
+  height: 100px;
+}
+
+/* ====================
 CONTENT
 ==================== */
 
@@ -119,6 +156,95 @@ CONTENT
   width: 200px;
   margin: 15px;
   border-radius: 50%;
+}
+
+.tour-stop {
+  border-bottom: 1px solid black;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+
+.tour-stop:last-child {
+  border-bottom: none;
+}
+
+.tour-item {
+  display: inline-block;
+  padding-right: 0.5em;
+}
+
+.tour-date {
+  color: #555;
+  font-weight: bold;
+  width: 11%;
+}
+
+.tour-city {
+  width: 24%;
+}
+
+.tour-venue {
+  width: 42%;
+}
+
+.tour-btn {
+  max-width: 19%;
+}
+
+.btn-primary {
+  background-color: #56ccf2;
+  border: none;
+  font-weight: bold;
+  border-radius: 0.3em;
+  color: white;
+  font-size: 1.1em;
+}
+
+.btn-primary:hover {
+  background-color: #2d9cdb;
+}
+
+/* ====================
+STORE PAGE STYLES
+==================== */
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.album-main-container {
+  margin: 50px;
+}
+
+.price-buy-container {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.merch-main-container {
+  margin: 50px;
+}
+
+.shop-item-image {
+  height: 250px;
+  width: 250px;
+}
+
+.shop-item-title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.shop-item-price {
+  flex-grow: 1;
+  color: #333;
 }
 
 /* ====================
