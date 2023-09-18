@@ -104,6 +104,7 @@ BUTTON STYLINGS
 .btn-header:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
+
 .play-btn {
   display: block;
   margin: 0 auto;
@@ -113,6 +114,19 @@ BUTTON STYLINGS
   padding: 0;
   width: 100px;
   height: 100px;
+}
+
+.btn-primary {
+  background-color: #56ccf2;
+  border: none;
+  font-weight: bold;
+  border-radius: 0.3em;
+  color: white;
+  font-size: 1.1em;
+}
+
+.btn-primary:hover {
+  background-color: #2d9cdb;
 }
 
 /* ====================
@@ -179,19 +193,6 @@ CONTENT
   max-width: 19%;
 }
 
-.btn-primary {
-  background-color: #56ccf2;
-  border: none;
-  font-weight: bold;
-  border-radius: 0.3em;
-  color: white;
-  font-size: 1.1em;
-}
-
-.btn-primary:hover {
-  background-color: #2d9cdb;
-}
-
 /* ====================
 STORE PAGE STYLES
 ==================== */
@@ -202,11 +203,11 @@ STORE PAGE STYLES
   justify-content: center;
 }
 
-.album-main-container {
-  margin: 50px;
+.shop-item {
+  margin: 35px;
 }
 
-.price-buy-container {
+.shop-item-details {
   display: flex;
   align-items: center;
   padding: 5px;
