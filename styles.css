@@ -200,7 +200,7 @@ STORE PAGE STYLES
 .shop-items {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .shop-item {
@@ -211,10 +211,6 @@ STORE PAGE STYLES
   display: flex;
   align-items: center;
   padding: 5px;
-}
-
-.merch-main-container {
-  margin: 50px;
 }
 
 .shop-item-image {
@@ -229,11 +225,43 @@ STORE PAGE STYLES
   font-weight: bold;
   font-size: 1.5em;
   color: #333;
+  margin-bottom: 8px;
 }
 
 .shop-item-price {
   flex-grow: 1;
   color: #333;
+}
+
+.cart-header {
+  font-weight: bold;
+  font-size: 1.25em;
+  color: #333;
+}
+
+.cart-column {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  margin-right: 1.5em;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.cart-row {
+  display: flex;
+}
+
+.cart-item {
+  width: 45%;
+}
+
+.cart-price {
+  width: 20%;
+}
+
+.cart-quantity {
+  width: 35%;
 }
 
 /* ====================
