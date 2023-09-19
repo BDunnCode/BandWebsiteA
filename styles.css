@@ -143,6 +143,12 @@ CONTENT
   padding: 0 1.5em;
 }
 
+.home-header-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 550px;
+}
+
 .section-header {
   font-family: "Metal Mania";
   font-weight: normal;
