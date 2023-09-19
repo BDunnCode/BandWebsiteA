@@ -152,12 +152,25 @@ CONTENT
   margin: 40px 0;
 }
 
+.about-p-header {
+  font-size: 1.1em;
+}
+
 .about-band-image {
   float: left;
   height: 200px;
   width: 200px;
   margin: 15px;
   border-radius: 50%;
+}
+
+.content-section p {
+  margin-bottom: 10px;
+  color: black;
+}
+
+.content-section p:last-child {
+  margin-bottom: 40px;
 }
 
 .tour-stop {
